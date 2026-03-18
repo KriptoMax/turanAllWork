@@ -20,4 +20,19 @@ class BackTransitionController(private val binding: ActivityOneTaskBinding, priv
         val intent = Intent(context, MainActivity::class.java)
         context.startActivity(intent)
     }
+
+    fun setup1(){
+        with(binding){
+            btn1Transit.setOnClickListener {
+                controllerTransitActivity()
+            }
+        }
+    }
+
+
+    private fun controllerTransitActivity(){
+        val intent = Intent(context, MainActivity::class.java)
+        context.startActivity(intent)
+    }
+
 }
