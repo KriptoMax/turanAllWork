@@ -6,8 +6,9 @@ import com.example.studyproject2.ControllerActivity.MainActivity
 import com.example.studyproject2.ControllerActivity.OneTaskActivity
 import com.example.studyproject2.databinding.ActivityOneTaskBinding
 
+
 class BackTransitionController(private val binding: ActivityOneTaskBinding, private val context: Context) {
-    fun setup(){
+    fun oneTask(){
         with(binding){
             tvTaskVault.setOnClickListener {
                 controllerOneTaskActivity()
@@ -21,7 +22,8 @@ class BackTransitionController(private val binding: ActivityOneTaskBinding, priv
         context.startActivity(intent)
     }
 
-    fun setup1(){
+    //Единая функция для возращения на главный экран
+    fun backMain(){
         with(binding){
             btn1Transit.setOnClickListener {
                 controllerTransitActivity()

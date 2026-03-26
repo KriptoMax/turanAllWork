@@ -22,8 +22,8 @@ class MainActivity : AppCompatActivity() {
 
         //setOnclickListener()
         val controller = TransitionController(binding, this)
-        controller.setup()
-
-
+        controller.oneTask()
+        controller.twoTask()
+        controller.threeTask()
     }
 }

@@ -21,8 +21,8 @@ class OneTaskActivity : AppCompatActivity() {
 
         val controller = BackTransitionController(binding, this)
 
-        controller.setup()
-        controller.setup1()
+        controller.oneTask()
+        controller.backMain()
 
     }
 

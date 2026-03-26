@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ControllerActivity.ThreeTaskActivity"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="14dp">
@@ -69,6 +70,58 @@
 
     </Toolbar>
 
+
+    <Button
+        android:id="@+id/btnSetColor1"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:padding="0dp"
+        android:text="Красный"
+        android:backgroundTint="@color/red"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar1" />
+    <Button
+        android:id="@+id/btnSetColor2"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:padding="0dp"
+        android:text="Жёлтый"
+        android:backgroundTint="@color/yellow"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar1" />
+    <Button
+        android:id="@+id/btnSetColor3"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:padding="0dp"
+        android:text="Зелёный"
+        android:backgroundTint="@color/green"
+        android:layout_marginBottom="-200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar1" />
+
+    <TextView
+        android:id="@+id/tvDeduction"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="@font/minecraft"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSetColor3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
