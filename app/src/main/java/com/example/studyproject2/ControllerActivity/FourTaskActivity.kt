@@ -1,5 +1,6 @@
 package com.example.studyproject2.ControllerActivity
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -19,6 +20,25 @@ class FourTaskActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(binding.root)
 
+        with(binding){
+
+        }
+
+        backMain()
     }
 
+
+    //Единая функция для возращения на главный экран
+    private fun backMain(){
+        with(binding){
+            tvTaskVault.setOnClickListener {
+                val intent = Intent(this@FourTaskActivity, MainActivity::class.java)
+                startActivity(intent)
+            }
+        }
+    }
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
+    }
 }
